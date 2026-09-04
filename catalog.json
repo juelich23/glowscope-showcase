@@ -1,35 +1,328 @@
 {
-  "version": 1,
-  "updated": "2026-09-04",
-  "note": "Product catalog for Glowscope. Entries with verified:false are NOT shown in Release builds — see CLAUDE.md. Verify brand, product name, active concentration and URL against the live product page before flipping verified to true.",
-  "products": [
-    {"id":"cerave-hydrating-cleanser","brand":"CeraVe","name":"Hydrating Facial Cleanser","roles":["cleanser"],"actives":"Ceramides, hyaluronic acid","fragranceFree":true,"texture":"cream","priceBand":"$","url":"https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser","note":"Non-foaming and soap-free, so it doesn't strip a flushed barrier.","verified":false},
-    {"id":"cetaphil-gentle-cleanser","brand":"Cetaphil","name":"Gentle Skin Cleanser","roles":["cleanser"],"actives":"None","fragranceFree":true,"texture":"lotion","priceBand":"$","url":"https://www.cetaphil.com/us/cleansers/gentle-skin-cleanser","note":"About as mild as a cleanser gets; good default for reactive skin.","verified":false},
-    {"id":"lrp-toleriane-cleanser","brand":"La Roche-Posay","name":"Toleriane Hydrating Gentle Cleanser","roles":["cleanser"],"actives":"Ceramide-3, niacinamide","fragranceFree":true,"texture":"cream","priceBand":"$$","url":"https://www.laroche-posay.us/toleriane-hydrating-gentle-cleanser","note":"Cream texture with a little niacinamide, aimed at sensitive skin.","verified":false},
-
-    {"id":"ordinary-niacinamide","brand":"The Ordinary","name":"Niacinamide 10% + Zinc 1%","roles":["niacinamide"],"actives":"Niacinamide 10%, zinc PCA 1%","fragranceFree":true,"texture":"serum","priceBand":"$","url":"https://theordinary.com/en-us/niacinamide-10-zinc-1-serum-100436.html","note":"10% is above the 5% ceiling for reactive skin — only for steps that allow it.","verified":false},
-    {"id":"inkey-niacinamide","brand":"The INKEY List","name":"Niacinamide Serum","roles":["niacinamide"],"actives":"Niacinamide 10%","fragranceFree":true,"texture":"serum","priceBand":"$","url":"https://www.theinkeylist.com/products/niacinamide","note":"Straightforward niacinamide with no added acids.","verified":false},
-
-    {"id":"ordinary-azelaic","brand":"The Ordinary","name":"Azelaic Acid Suspension 10%","roles":["azelaic"],"actives":"Azelaic acid 10%","fragranceFree":true,"texture":"cream","priceBand":"$","url":"https://theordinary.com/en-us/azelaic-acid-suspension-10-serum-100418.html","note":"10% azelaic with no added exfoliating acids.","verified":false},
-    {"id":"paulas-azelaic","brand":"Paula's Choice","name":"10% Azelaic Acid Booster","roles":["azelaic"],"actives":"Azelaic acid 10%, salicylic acid","fragranceFree":true,"texture":"cream","priceBand":"$$$","url":"https://www.paulaschoice.com/10-azelaic-acid-booster/2350.html","note":"Contains added salicylic acid — check that against your routine's cautions.","verified":false},
-
-    {"id":"paulas-bha","brand":"Paula's Choice","name":"Skin Perfecting 2% BHA Liquid Exfoliant","roles":["bha"],"actives":"Salicylic acid 2%","fragranceFree":true,"texture":"liquid","priceBand":"$$$","url":"https://www.paulaschoice.com/skin-perfecting-2pct-bha-liquid-exfoliant/201.html","note":"The reference 2% BHA. Never on the same night as a retinoid.","verified":false},
-    {"id":"inkey-bha","brand":"The INKEY List","name":"Beta Hydroxy Acid Serum","roles":["bha"],"actives":"Salicylic acid 2%","fragranceFree":true,"texture":"serum","priceBand":"$","url":"https://www.theinkeylist.com/products/beta-hydroxy-acid-serum","note":"Cheaper 2% BHA option.","verified":false},
-
-    {"id":"inkey-retinol","brand":"The INKEY List","name":"Retinol Serum","roles":["retinoid"],"actives":"Retinol 0.5% (slow release)","fragranceFree":true,"texture":"serum","priceBand":"$","url":"https://www.theinkeylist.com/products/retinol-serum","note":"Encapsulated, which is gentler on skin that reacts.","verified":false},
-    {"id":"avene-retrinal","brand":"Avène","name":"RetrinAL 0.05 Cream","roles":["retinoid"],"actives":"Retinaldehyde 0.05%","fragranceFree":true,"texture":"cream","priceBand":"$$$","url":"https://www.aveneusa.com/","note":"Retinaldehyde at 0.05% in a cream base.","verified":false},
-
-    {"id":"ordinary-ha","brand":"The Ordinary","name":"Hyaluronic Acid 2% + B5","roles":["hydrating"],"actives":"Hyaluronic acid, panthenol","fragranceFree":true,"texture":"serum","priceBand":"$","url":"https://theordinary.com/en-us/hyaluronic-acid-2-b5-hydrating-serum-100418.html","note":"Apply to damp skin, then seal with moisturiser.","verified":false},
-    {"id":"lrp-hyalu","brand":"La Roche-Posay","name":"Hyalu B5 Serum","roles":["hydrating"],"actives":"Hyaluronic acid, panthenol","fragranceFree":true,"texture":"serum","priceBand":"$$$","url":"https://www.laroche-posay.us/hyalu-b5-pure-hyaluronic-acid-serum","note":"Hydrating serum aimed at sensitive skin.","verified":false},
-
-    {"id":"cerave-moisturising-lotion","brand":"CeraVe","name":"Moisturising Lotion","roles":["moisturiser"],"actives":"Ceramides, hyaluronic acid","fragranceFree":true,"texture":"lotion","priceBand":"$","url":"https://www.cerave.com/skincare/moisturizers/moisturizing-lotion","note":"Lightweight enough for an oilier T-zone.","verified":false},
-    {"id":"cerave-pm-lotion","brand":"CeraVe","name":"PM Facial Moisturising Lotion","roles":["moisturiser"],"actives":"Ceramides, niacinamide","fragranceFree":true,"texture":"lotion","priceBand":"$","url":"https://www.cerave.com/skincare/moisturizers/pm-facial-moisturizing-lotion","note":"Night lotion; the niacinamide is a bonus for redness.","verified":false},
-    {"id":"lrp-cicaplast","brand":"La Roche-Posay","name":"Cicaplast Baume B5+","roles":["moisturiser","barrier"],"actives":"Panthenol 5%, madecassoside","fragranceFree":true,"texture":"balm","priceBand":"$$","url":"https://www.laroche-posay.us/cicaplast-baume-b5","note":"Rich barrier balm for when actives have made skin tight.","verified":false},
-
-    {"id":"lrp-anthelios-mineral","brand":"La Roche-Posay","name":"Anthelios Mineral SPF 50","roles":["spf"],"actives":"Titanium dioxide, zinc oxide","fragranceFree":true,"texture":"lotion","priceBand":"$$$","url":"https://www.laroche-posay.us/anthelios-mineral-sunscreen","note":"Mineral filters only, which tend to calm rather than provoke flushing.","verified":false},
-    {"id":"eltamd-uv-clear","brand":"EltaMD","name":"UV Clear Broad-Spectrum SPF 46","roles":["spf"],"actives":"Zinc oxide 9%, niacinamide","fragranceFree":true,"texture":"lotion","priceBand":"$$$","url":"https://eltamd.com/products/uv-clear-broad-spectrum-spf-46","note":"Zinc-based with niacinamide; popular with reactive and acne-prone skin.","verified":false},
-
-    {"id":"cerave-eye-repair","brand":"CeraVe","name":"Eye Repair Cream","roles":["eye"],"actives":"Ceramides, niacinamide, hyaluronic acid","fragranceFree":true,"texture":"cream","priceBand":"$","url":"https://www.cerave.com/skincare/moisturizers/eye-repair-cream","note":"Fragrance-free and eye-area tested.","verified":false},
-    {"id":"inkey-caffeine-eye","brand":"The INKEY List","name":"Caffeine Eye Cream","roles":["eye"],"actives":"Caffeine 5%, matrixyl 3000","fragranceFree":true,"texture":"cream","priceBand":"$","url":"https://www.theinkeylist.com/products/caffeine-eye-cream","note":"Caffeine high in the list, aimed at puffiness.","verified":false}
-  ]
+ "version": 2,
+ "updated": "2026-09-04",
+ "note": "Product catalog for Glowscope. Entries with verified:false are NOT shown in Release builds. 'url' is a direct product page and may be empty; when it is, the app falls back to a retailer search built from 'search', which cannot 404. Verify brand, name, active concentration and any direct url against the live page before setting verified:true.",
+ "products": [
+  {
+   "id": "cerave-hydrating-cleanser",
+   "brand": "CeraVe",
+   "name": "Hydrating Facial Cleanser",
+   "roles": [
+    "cleanser"
+   ],
+   "actives": "Ceramides, hyaluronic acid",
+   "fragranceFree": true,
+   "texture": "cream",
+   "priceBand": "$",
+   "url": "https://www.cerave.com/skincare/cleansers/hydrating-facial-cleanser",
+   "note": "Non-foaming and soap-free, so it doesn't strip a flushed barrier.",
+   "verified": false,
+   "search": "CeraVe Hydrating Facial Cleanser"
+  },
+  {
+   "id": "cetaphil-gentle-cleanser",
+   "brand": "Cetaphil",
+   "name": "Gentle Skin Cleanser",
+   "roles": [
+    "cleanser"
+   ],
+   "actives": "None",
+   "fragranceFree": true,
+   "texture": "lotion",
+   "priceBand": "$",
+   "url": "",
+   "note": "About as mild as a cleanser gets; good default for reactive skin.",
+   "verified": false,
+   "search": "Cetaphil Gentle Skin Cleanser"
+  },
+  {
+   "id": "lrp-toleriane-cleanser",
+   "brand": "La Roche-Posay",
+   "name": "Toleriane Hydrating Gentle Cleanser",
+   "roles": [
+    "cleanser"
+   ],
+   "actives": "Ceramide-3, niacinamide",
+   "fragranceFree": true,
+   "texture": "cream",
+   "priceBand": "$$",
+   "url": "",
+   "note": "Cream texture with a little niacinamide, aimed at sensitive skin.",
+   "verified": false,
+   "search": "La Roche-Posay Toleriane Hydrating Gentle Cleanser"
+  },
+  {
+   "id": "ordinary-niacinamide",
+   "brand": "The Ordinary",
+   "name": "Niacinamide 10% + Zinc 1%",
+   "roles": [
+    "niacinamide"
+   ],
+   "actives": "Niacinamide 10%, zinc PCA 1%",
+   "fragranceFree": true,
+   "texture": "serum",
+   "priceBand": "$",
+   "url": "https://theordinary.com/en-us/niacinamide-10-zinc-1-serum-100436.html",
+   "note": "10% is above the 5% ceiling for reactive skin — only for steps that allow it.",
+   "verified": false,
+   "search": "The Ordinary Niacinamide 10% + Zinc 1%"
+  },
+  {
+   "id": "inkey-niacinamide",
+   "brand": "The INKEY List",
+   "name": "Niacinamide Serum",
+   "roles": [
+    "niacinamide"
+   ],
+   "actives": "Niacinamide 10%",
+   "fragranceFree": true,
+   "texture": "serum",
+   "priceBand": "$",
+   "url": "https://www.theinkeylist.com/products/niacinamide",
+   "note": "Straightforward niacinamide with no added acids.",
+   "verified": false,
+   "search": "The INKEY List Niacinamide Serum"
+  },
+  {
+   "id": "ordinary-azelaic",
+   "brand": "The Ordinary",
+   "name": "Azelaic Acid Suspension 10%",
+   "roles": [
+    "azelaic"
+   ],
+   "actives": "Azelaic acid 10%",
+   "fragranceFree": true,
+   "texture": "cream",
+   "priceBand": "$",
+   "url": "https://theordinary.com/en-us/azelaic-acid-suspension-10-serum-100418.html",
+   "note": "10% azelaic with no added exfoliating acids.",
+   "verified": false,
+   "search": "The Ordinary Azelaic Acid Suspension 10%"
+  },
+  {
+   "id": "paulas-azelaic",
+   "brand": "Paula's Choice",
+   "name": "10% Azelaic Acid Booster",
+   "roles": [
+    "azelaic"
+   ],
+   "actives": "Azelaic acid 10%, salicylic acid",
+   "fragranceFree": true,
+   "texture": "cream",
+   "priceBand": "$$$",
+   "url": "",
+   "note": "Contains added salicylic acid — check that against your routine's cautions.",
+   "verified": false,
+   "search": "Paula's Choice 10% Azelaic Acid Booster"
+  },
+  {
+   "id": "paulas-bha",
+   "brand": "Paula's Choice",
+   "name": "Skin Perfecting 2% BHA Liquid Exfoliant",
+   "roles": [
+    "bha"
+   ],
+   "actives": "Salicylic acid 2%",
+   "fragranceFree": true,
+   "texture": "liquid",
+   "priceBand": "$$$",
+   "url": "https://www.paulaschoice.com/skin-perfecting-2pct-bha-liquid-exfoliant/201.html",
+   "note": "The reference 2% BHA. Never on the same night as a retinoid.",
+   "verified": false,
+   "search": "Paula's Choice Skin Perfecting 2% BHA Liquid Exfoliant"
+  },
+  {
+   "id": "inkey-bha",
+   "brand": "The INKEY List",
+   "name": "Beta Hydroxy Acid Serum",
+   "roles": [
+    "bha"
+   ],
+   "actives": "Salicylic acid 2%",
+   "fragranceFree": true,
+   "texture": "serum",
+   "priceBand": "$",
+   "url": "https://www.theinkeylist.com/products/beta-hydroxy-acid-serum",
+   "note": "Cheaper 2% BHA option.",
+   "verified": false,
+   "search": "The INKEY List Beta Hydroxy Acid Serum"
+  },
+  {
+   "id": "inkey-retinol",
+   "brand": "The INKEY List",
+   "name": "Retinol Serum",
+   "roles": [
+    "retinoid"
+   ],
+   "actives": "Retinol 0.5% (slow release)",
+   "fragranceFree": true,
+   "texture": "serum",
+   "priceBand": "$",
+   "url": "https://www.theinkeylist.com/products/retinol-serum",
+   "note": "Encapsulated, which is gentler on skin that reacts.",
+   "verified": false,
+   "search": "The INKEY List Retinol Serum"
+  },
+  {
+   "id": "avene-retrinal",
+   "brand": "Avène",
+   "name": "RetrinAL 0.05 Cream",
+   "roles": [
+    "retinoid"
+   ],
+   "actives": "Retinaldehyde 0.05%",
+   "fragranceFree": true,
+   "texture": "cream",
+   "priceBand": "$$$",
+   "url": "",
+   "note": "Retinaldehyde at 0.05% in a cream base.",
+   "verified": false,
+   "search": "Avène RetrinAL 0.05 Cream"
+  },
+  {
+   "id": "ordinary-ha",
+   "brand": "The Ordinary",
+   "name": "Hyaluronic Acid 2% + B5",
+   "roles": [
+    "hydrating"
+   ],
+   "actives": "Hyaluronic acid, panthenol",
+   "fragranceFree": true,
+   "texture": "serum",
+   "priceBand": "$",
+   "url": "https://theordinary.com/en-us/hyaluronic-acid-2-b5-hydrating-serum-100418.html",
+   "note": "Apply to damp skin, then seal with moisturiser.",
+   "verified": false,
+   "search": "The Ordinary Hyaluronic Acid 2% + B5"
+  },
+  {
+   "id": "lrp-hyalu",
+   "brand": "La Roche-Posay",
+   "name": "Hyalu B5 Serum",
+   "roles": [
+    "hydrating"
+   ],
+   "actives": "Hyaluronic acid, panthenol",
+   "fragranceFree": true,
+   "texture": "serum",
+   "priceBand": "$$$",
+   "url": "",
+   "note": "Hydrating serum aimed at sensitive skin.",
+   "verified": false,
+   "search": "La Roche-Posay Hyalu B5 Serum"
+  },
+  {
+   "id": "cerave-moisturising-lotion",
+   "brand": "CeraVe",
+   "name": "Moisturising Lotion",
+   "roles": [
+    "moisturiser"
+   ],
+   "actives": "Ceramides, hyaluronic acid",
+   "fragranceFree": true,
+   "texture": "lotion",
+   "priceBand": "$",
+   "url": "",
+   "note": "Lightweight enough for an oilier T-zone.",
+   "verified": false,
+   "search": "CeraVe Moisturising Lotion"
+  },
+  {
+   "id": "cerave-pm-lotion",
+   "brand": "CeraVe",
+   "name": "PM Facial Moisturising Lotion",
+   "roles": [
+    "moisturiser"
+   ],
+   "actives": "Ceramides, niacinamide",
+   "fragranceFree": true,
+   "texture": "lotion",
+   "priceBand": "$",
+   "url": "https://www.cerave.com/skincare/moisturizers/pm-facial-moisturizing-lotion",
+   "note": "Night lotion; the niacinamide is a bonus for redness.",
+   "verified": false,
+   "search": "CeraVe PM Facial Moisturising Lotion"
+  },
+  {
+   "id": "lrp-cicaplast",
+   "brand": "La Roche-Posay",
+   "name": "Cicaplast Baume B5+",
+   "roles": [
+    "moisturiser",
+    "barrier"
+   ],
+   "actives": "Panthenol 5%, madecassoside",
+   "fragranceFree": true,
+   "texture": "balm",
+   "priceBand": "$$",
+   "url": "",
+   "note": "Rich barrier balm for when actives have made skin tight.",
+   "verified": false,
+   "search": "La Roche-Posay Cicaplast Baume B5+"
+  },
+  {
+   "id": "lrp-anthelios-mineral",
+   "brand": "La Roche-Posay",
+   "name": "Anthelios Mineral SPF 50",
+   "roles": [
+    "spf"
+   ],
+   "actives": "Titanium dioxide, zinc oxide",
+   "fragranceFree": true,
+   "texture": "lotion",
+   "priceBand": "$$$",
+   "url": "",
+   "note": "Mineral filters only, which tend to calm rather than provoke flushing.",
+   "verified": false,
+   "search": "La Roche-Posay Anthelios Mineral SPF 50"
+  },
+  {
+   "id": "eltamd-uv-clear",
+   "brand": "EltaMD",
+   "name": "UV Clear Broad-Spectrum SPF 46",
+   "roles": [
+    "spf"
+   ],
+   "actives": "Zinc oxide 9%, niacinamide",
+   "fragranceFree": true,
+   "texture": "lotion",
+   "priceBand": "$$$",
+   "url": "https://eltamd.com/products/uv-clear-broad-spectrum-spf-46",
+   "note": "Zinc-based with niacinamide; popular with reactive and acne-prone skin.",
+   "verified": false,
+   "search": "EltaMD UV Clear Broad-Spectrum SPF 46"
+  },
+  {
+   "id": "cerave-eye-repair",
+   "brand": "CeraVe",
+   "name": "Eye Repair Cream",
+   "roles": [
+    "eye"
+   ],
+   "actives": "Ceramides, niacinamide, hyaluronic acid",
+   "fragranceFree": true,
+   "texture": "cream",
+   "priceBand": "$",
+   "url": "https://www.cerave.com/skincare/moisturizers/eye-repair-cream",
+   "note": "Fragrance-free and eye-area tested.",
+   "verified": false,
+   "search": "CeraVe Eye Repair Cream"
+  },
+  {
+   "id": "inkey-caffeine-eye",
+   "brand": "The INKEY List",
+   "name": "Caffeine Eye Cream",
+   "roles": [
+    "eye"
+   ],
+   "actives": "Caffeine 5%, matrixyl 3000",
+   "fragranceFree": true,
+   "texture": "cream",
+   "priceBand": "$",
+   "url": "https://www.theinkeylist.com/products/caffeine-eye-cream",
+   "note": "Caffeine high in the list, aimed at puffiness.",
+   "verified": false,
+   "search": "The INKEY List Caffeine Eye Cream"
+  }
+ ]
 }
