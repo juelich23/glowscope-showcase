@@ -1,7 +1,8 @@
 {
- "version": 2,
+ "version": 3,
  "updated": "2026-09-04",
- "note": "Product catalog for Glowscope. Entries with verified:false are NOT shown in Release builds. 'url' is a direct product page and may be empty; when it is, the app falls back to a retailer search built from 'search', which cannot 404. Verify brand, name, active concentration and any direct url against the live page before setting verified:true.",
+ "amazonTag": "glowscope20-20",
+ "note": "Product catalog for Glowscope. Entries with verified:false are NOT shown in Release builds. All product links route to an Amazon search built from 'search' plus amazonTag, so every tap can earn and nothing can 404. 'url' is kept for reference only. Verify brand, name and active concentration against the live listing before setting verified:true.",
  "products": [
   {
    "id": "cerave-hydrating-cleanser",
