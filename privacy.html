@@ -12,47 +12,30 @@
   <a class="brand" href="index.html"><span class="dot"></span> Glowscope</a>
 </header>
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated 4 September 2026</p>
-<p class="lede">Glowscope works on photographs of your face, so this policy is specific about where those photos go. The short version: they are analysed and discarded, they are never stored on our servers, and the copies you keep stay on your phone.</p>
-<h2>What we collect</h2>
-<ul>
-  <li><strong>Photos you take in the app.</strong> Face scans, and photos of product labels.</li>
-  <li><strong>Your answers</strong> to the three setup questions: your main concern, your skin type, and how reactive your skin is.</li>
-  <li><strong>Purchase status</strong> — whether you have an active subscription or trial.</li>
-</ul>
-<p>We do not ask for your name, email address or phone number. Glowscope has no account system, so there is nothing to sign up for and nothing to sign in to.</p>
-
-<h2>Where your photos go</h2>
-<p>When you take a scan, the photo is sent over an encrypted connection to our analysis function, which passes it to <strong>Anthropic</strong>, our AI processor, to produce your results. The same happens for product label photos.</p>
-<div class="panel">
-  <p><strong>Your photos are not stored on our servers.</strong> They are held only for as long as the analysis takes, and are discarded once the results come back.</p>
-  <p><strong>Your photos are not used to train AI models</strong> and are not used for advertising or marketing.</p>
-</div>
-<p>The copy of the photo you see in the app — the one attached to your scan history and used for before-and-after comparisons — is written to your device's private app storage and never uploaded.</p>
-
-<h2>What stays on your device</h2>
-<p>Your scan history, your scores, your findings, your routine and your progress photos are stored only on your iPhone, inside the app's private container. We cannot see them. Nobody else can read them.</p>
-<p>This has a consequence worth knowing: if you delete Glowscope or change phones, that history is gone and cannot be recovered, because we never had a copy.</p>
-
-<h2>Who else is involved</h2>
-<ul>
-  <li><strong>Anthropic</strong> — analyses scan and product photos. Data sent through their API is not used to train their models.</li>
-  <li><strong>Supabase</strong> — hosts the function that passes your photo to the analyser. Photos pass through it and are not retained.</li>
-  <li><strong>RevenueCat</strong> — manages subscriptions and receives an anonymous identifier plus your purchase status.</li>
-  <li><strong>Apple</strong> — processes the payment. We never see your payment details.</li>
-</ul>
-
-<h2>Children</h2>
-<p>Glowscope is not directed at children under 13, and we do not knowingly collect information from them.</p>
-
-<h2>Your choices</h2>
-<p>Deleting the app deletes everything Glowscope holds about you, because everything it holds is on your device. If you want confirmation that nothing of yours remains on our side, email us and we will explain exactly what we do and do not have — which, for scan content, is nothing.</p>
-
-<h2>Changes</h2>
-<p>If this policy changes in a way that affects how your photos are handled, we will update this page and change the date at the top before the change takes effect.</p>
-
-<h2>Contact</h2>
-<p><a href="mailto:juelich23@gmail.com">juelich23@gmail.com</a></p>
+<p class="updated">Last updated September 6, 2026</p>
+<p class="lede">Your routine, profile and saved products are personal. This page explains what stays on your iPhone and what leaves it.</p>
+<h2>Face analysis — with your permission</h2>
+<p>Before your first face analysis, we ask permission to send the photo through Supabase to Anthropic. We resize the image and remove embedded metadata. Anthropic returns estimates of visible cosmetic features; the app does not identify you or diagnose a medical condition. We do not store uploaded photos or results in our server database.</p>
+<p>Anthropic's standard commercial API policy deletes inputs and outputs within 30 days, with exceptions such as safety enforcement and legal requirements. API content is not used for model training by default. We do not promise immediate deletion by every processor. See <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">Anthropic's commercial retention policy</a>.</p>
+<p>You can withdraw AI photo permission in Settings. This blocks future face-analysis requests until you agree again; it does not erase past provider records. Your saved history remains accessible.</p>
+<h2>What stays on your iPhone</h2>
+<p>Your optional name, goals, skin type, sensitivity, routine preferences, ingredient exclusions, saved products, routines, progress and saved face photos are stored in the app's private storage. Product labels are read using Apple's on-device Vision text recognition. Product matching and routine composition run on your phone; your profile and product-label photos are not sent to Anthropic.</p>
+<p>The app does not provide its own cloud sync. App data may be included in iPhone backups or device transfers according to your Apple settings. Recovery depends on those backups. Deleting local app data does not remove copies from existing backups.</p>
+<h2>Usage analytics and subscriptions</h2>
+<p>In production builds, PostHog receives selected interaction events such as onboarding completion, paywall views and subscription actions, plus app/device information and an anonymous installation identifier. We do not send skin scores, findings, profile answers, product ingredients or photos to PostHog. Session replay and automatic screen capture are disabled. Turn off usage analytics in Settings to stop future analytics events.</p>
+<p>RevenueCat manages subscription status using its app-user identifier and Apple's transaction information. With usage analytics enabled, we associate the PostHog identifier with RevenueCat to measure subscription conversion. These are pseudonymous identifiers, not a claim that events cannot be linked to the same installation. Apple processes payments; we never receive your payment card details.</p>
+<h2>Acquisition measurement</h2>
+<p>We report coarse onboarding, trial and purchase milestones through Apple's SKAdNetwork framework. We do not request an advertising identifier or send skin data to ad platforms. Campaign codes in links may be stored locally and included in permitted usage analytics. Apple's attribution reporting and subscription records are separate from the optional PostHog analytics setting.</p>
+<h2>Abuse prevention and operating the service</h2>
+<p>Face-analysis requests carry a random installation identifier stored in the device keychain. Supabase receives the network address as part of processing requests. We store salted hashes of the installation and network identifiers with request counts to enforce limits, and remove those counter rows after 35 days during service maintenance. Keychain identifiers may survive reinstalling the app; deleting local history does not reset service allowances.</p>
+<p>Operational logs record request status, processing time and model token counts, not photos or skin findings. Hosting providers may retain ordinary infrastructure logs under their service settings. These records and purchase records are not automatically erased when the app is removed. We do not sell personal data.</p>
+<h2>Catalog and retailer links</h2>
+<p>The app fetches a verified product catalog from GitHub Pages. Opening a manufacturer or Amazon link contacts that website, which applies its own privacy policy. Amazon links include our Associates tag. We receive commission for qualifying purchases, not your skin data.</p>
+<h2>Your choices and deletion</h2>
+<p>Use Progress to delete an individual scan and its photo. Settings lets you delete all local app data, turn off analytics, withdraw AI permission and manage reminders. Local notifications are scheduled on the phone with your permission. Deleting data does not cancel your Apple subscription; use Manage Subscription.</p>
+<p>For a request about provider-held records, contact us. Because we do not require a name or account, we may need the relevant app-user identifier or transaction details to locate those records. Some purchase, fraud-prevention or legally required records may need to be retained.</p>
+<h2>Children</h2><p>Glowscope is not directed to children under 13. We do not knowingly collect their information.</p>
+<h2>Contact and changes</h2><p>Email <a href="mailto:juelich23@gmail.com">juelich23@gmail.com</a> with privacy questions. We update this page when our practices change and request renewed permission when a material AI-sharing change requires it.</p>
 <footer>
   <p style="margin:0 0 14px">As an Amazon Associate we earn from qualifying purchases.</p>
   <a href="index.html">Home</a>
