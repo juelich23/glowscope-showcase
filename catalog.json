@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "updated": "2026-09-06",
   "amazonTag": "glowscope20-20",
   "products": [
@@ -180,8 +180,7 @@
         "Triethoxycaprylylsilane",
         "Polyacrylate Crosspolymer-11",
         "Caprylyl Glycol",
-        "1",
-        "2-Hexanediol"
+        "1,2-Hexanediol"
       ],
       "concentrations": {
         "zinc oxide": 19.5
@@ -272,6 +271,142 @@
       },
       "verifiedAt": "2026-09-06",
       "sourceURL": "https://theordinary.com/en-us/azelaic-acid-suspension-10-exfoliator-100407.html"
+    },
+    {
+      "id": "vanicream-gentle-cleanser",
+      "brand": "Vanicream",
+      "name": "Gentle Facial Cleanser",
+      "roles": [
+        "cleanser"
+      ],
+      "actives": "Glycerin, gentle surfactants",
+      "fragranceFree": true,
+      "texture": "gel",
+      "priceBand": "$",
+      "url": "https://www.vanicream.com/product/vanicream-facial-cleanser",
+      "search": "Vanicream Gentle Facial Cleanser",
+      "note": "US manufacturer ingredient list checked September 6, 2026. Formulas can change; compare your own package before use.",
+      "verified": true,
+      "ingredients": [
+        "water",
+        "glycerin",
+        "coco-glucoside",
+        "sodium cocoyl glycinate",
+        "acrylates copolymer",
+        "caprylyl glycol",
+        "mica",
+        "sodium chloride",
+        "1,2-hexanediol",
+        "titanium dioxide",
+        "sodium hydroxide",
+        "disodium EDTA"
+      ],
+      "concentrations": {},
+      "verifiedAt": "2026-09-06",
+      "sourceURL": "https://www.vanicream.com/product/vanicream-facial-cleanser"
+    },
+    {
+      "id": "vanicream-daily-facial",
+      "brand": "Vanicream",
+      "name": "Daily Facial Moisturizer",
+      "roles": [
+        "moisturiser"
+      ],
+      "actives": "Squalane, ceramides, hyaluronic acid",
+      "fragranceFree": true,
+      "texture": "lotion",
+      "priceBand": "$",
+      "url": "https://www.vanicream.com/product/vanicream-daily-facial-moisturizer",
+      "search": "Vanicream Daily Facial Moisturizer",
+      "note": "US manufacturer ingredient list checked September 6, 2026. Formulas can change; compare your own package before use.",
+      "verified": true,
+      "ingredients": [
+        "water",
+        "squalane",
+        "glycerin",
+        "pentylene glycol",
+        "polyglyceryl-2 stearate",
+        "glyceryl stearate",
+        "stearyl alcohol",
+        "hyaluronic acid",
+        "ceramide EOP",
+        "ceramide NG",
+        "ceramide NP",
+        "ceramide AS",
+        "ceramide AP",
+        "carnosine",
+        "hydrogenated lecithin",
+        "phytosterols",
+        "caprylyl glycol",
+        "polyacrylate crosspolymer-11",
+        "1,2-hexanediol"
+      ],
+      "concentrations": {},
+      "verifiedAt": "2026-09-06",
+      "sourceURL": "https://www.vanicream.com/product/vanicream-daily-facial-moisturizer"
+    },
+    {
+      "id": "vanicream-cream",
+      "brand": "Vanicream",
+      "name": "Moisturizing Cream",
+      "roles": [
+        "moisturiser"
+      ],
+      "actives": "Petrolatum, sorbitol",
+      "fragranceFree": true,
+      "texture": "cream",
+      "priceBand": "$",
+      "url": "https://www.vanicream.com/product/vanicream-moisturizing-cream",
+      "search": "Vanicream Moisturizing Cream",
+      "note": "US manufacturer ingredient list checked September 6, 2026. Formulas can change; compare your own package before use.",
+      "verified": true,
+      "ingredients": [
+        "water",
+        "petrolatum",
+        "sorbitol",
+        "cetearyl alcohol",
+        "propylene glycol",
+        "ceteareth-20",
+        "simethicone",
+        "glyceryl stearate",
+        "PEG-30 stearate",
+        "sorbic acid"
+      ],
+      "concentrations": {},
+      "verifiedAt": "2026-09-06",
+      "sourceURL": "https://www.vanicream.com/product/vanicream-moisturizing-cream"
+    },
+    {
+      "id": "vanicream-lotion",
+      "brand": "Vanicream",
+      "name": "Moisturizing Lotion",
+      "roles": [
+        "moisturiser"
+      ],
+      "actives": "Petrolatum, sorbitol",
+      "fragranceFree": true,
+      "texture": "lotion",
+      "priceBand": "$",
+      "url": "https://www.vanicream.com/product/vanicream-moisturizing-lotion",
+      "search": "Vanicream Moisturizing Lotion",
+      "note": "US manufacturer ingredient list checked September 6, 2026. Formulas can change; compare your own package before use.",
+      "verified": true,
+      "ingredients": [
+        "water",
+        "petrolatum",
+        "propylene glycol",
+        "cetearyl alcohol",
+        "sorbitol",
+        "ceteareth-20",
+        "simethicone",
+        "glyceryl stearate",
+        "PEG-30 stearate",
+        "sorbic acid",
+        "BHT"
+      ],
+      "concentrations": {},
+      "verifiedAt": "2026-09-06",
+      "sourceURL": "https://www.vanicream.com/product/vanicream-moisturizing-lotion"
     }
   ],
   "schemaVersion": 2
